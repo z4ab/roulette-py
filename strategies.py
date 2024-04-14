@@ -24,9 +24,9 @@ class Martingale(Player):
     def round(self, won):
         Player.round(self, won)
         if (won):
-            self.bet *= 2
-        else:
             self.bet = self.initial_bet
+        else:
+            self.bet *= 2
 
 """
 D'Alembert 
