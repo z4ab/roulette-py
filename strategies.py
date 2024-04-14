@@ -3,6 +3,8 @@ class Player:
         self.balance = balance
         self.bet = 0
     def round(self, won):
+        if self.bet > self.balance:
+            self.bet = self.balance
         if won:
             self.balance += self.bet
         else:
