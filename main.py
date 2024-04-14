@@ -25,7 +25,7 @@ while playing:
         wager = int(wager)
         condition = False
         if placement.isnumeric():
-            balance += 35 * wager if number == placement else -wager
+            balance += 35 * wager if number == int(placement) else -wager
         else:
             match placement:
                 case "red":
